@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+    <html lang="ru">
+    <head> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 1</title>
+    </head>
+    <body>
+        <header>
+            <div><ul>
+            <li><a href="">Ссылка 1</a></li>
+            <li><a href="">Ссылка 2</a></li>
+            <li><a href="">Ссылка 3</a></li>
+        </ul><a href=""><img src="image3.png" width="70" height="70" alt=""></a>
+        <p>Задание №2</p></div></header>
+        <a id="top"></a>
+        <nav><div>
+        <ul>
+          <li><a href="https://www.kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+          <li><a href="https://www.kubsu.ru/index.html">Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https</a></li>
+          <li><a href="https://www.kubsu.ru/"><img src="image.jpg" width="150" height="100" alt="Ссылка-изображение"></a></li>
+          <li><a href="/4.html">Cокращенная ссылка на внутреннюю страницу</a></li>
+          <li><a href="/index.html">Cокращенная ссылка на главную страницу</a></li>
+          <li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+          <li><a href="https://bookshop.ru/search?q=book&tom=1&page=20">Ссылка с тремя параметрами</a></li>
+          <li><a href="https://www.kubsu.ru/index.html/?id=12345">Ссылка с параметром в id</a></li>
+          <li><a href="./9.html">Относительная на страницу в текущем каталоге</a></li>
+          <li><a href="./about/10k.html">Относительная на страницу в каталоге about</a></li>
+          <li><a href="./level2/11.html">Относительная на страницу в каталоге уровнем выше</a></li>
+          <li><a href="./level2/level1/12.html">Относительная на страницу в каталоге на 2 уровня выше</a></li>
+          <li>Текст абзаца с <a href="13.html">контекстной ссылкой</a></li>
+          <li><a href="4.html#top">Ссылка на фрагмент сторонней страницы</a></li>
+          <li>Ссылки с областями картинки <br><img src="image2.jpg" width="400" height="250" usemap="#imag" alt="Области картинки">
+            <map name="imag"><area shape="circle" coords="100,125,95" href="15c.html" alt="circle">
+                <area shape="rect" coords="210,50,350,200" href="15r.html" alt="rect"></map></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a >Ссылка без href</a></li>
+        <li><a href="18.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href="19.html" rel="nofollow"><noindex>Ссылка, запрещенная для индексации поисковиками</noindex></a></li>
+        <li>Список ссылок<ol><li><a href="201.html" title="Ссылка номер 1">Первая ссылка</a></li>
+            <li><a href="202.html" title="Ссылка номер 2">Вторая ссылка</a></li>
+            <li><a href="203.html" title="Ссылка номер 3">Третья ссылка</a></li></ol></li>
+        <li><a href="ftp://demo:12345@test.rebex.net/readme.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        <table>
+            <tr>
+                <td  colspan="2">1</td>
+                <td colspan="2">3</td>
+            </tr>
+            <tr >
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <form action ="index.html" method="POST">
+            <label>
+                Введите ФИО: <br>
+                <input name="fio" type="text" placeholder="Иванов И.И."><br>
+            </label>
+            <label>
+                Введите телефон:<br>
+                <input name="ph" type="tel" placeholder="79ХХХХХХХХХ"><br>
+            </label>
+            <label>
+                Введите e-mail:<br>
+                <input name="em" type="email" placeholder="mail@adress.com"><br>
+            </label>
+            <label>
+                Введите дату рождения:<br>
+                <input name="dat" type="date"><br>
+            </label>
+            Пол:<br>
+            <label>
+                <input name="pol" type="radio" checked="checked" value="Женский">
+                Женский
+            </label>
+            <label>
+                <input name="pol" type="radio" checked="checked" value="Мужской">
+                Мужской
+            </label><br>
+            <label>
+                Любимый язык программирования: <br>
+                <select name="PL[]" multiple="multiple">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select>
+            </label><br>
+            <label>
+                Биография:<br>
+                <textarea name="bio" placeholder="Введите не менее 50 символов (включая пробелы)"></textarea>
+            </label><br>
+            <label> 
+                <input type="checkbox" name="check">С контрактом ознакомлен(а)
+            </label><br>
+            <input type="submit" value="Сохранить">
+
+        </form> </div>
+    </nav>
+    <footer>
+        <p>(C)2023272</p></footer>
+    </body>
+</html>
+

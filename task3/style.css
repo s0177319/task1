@@ -1,0 +1,118 @@
+@media screen and (max-width: 981px)  {  body{display: flex; flex-direction: column;}
+header{ display: flex; 
+    background-color: #024105;
+    margin:0px;
+    padding: 0px;
+    width: 100%; height: 400px;
+} header div{display: flex; flex-wrap: wrap; width: 960px; height: 399px;}
+header img{order:1; justify-content:flex-start; ; border-radius:  50px;}
+header p{order: 2; font-size: 50px; color: aliceblue;  width: 700px; margin: 0px; align-self: center;}
+header a{ display: flex;
+    font-size: 45px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}header ul{ order: 3; flex-direction: column; justify-content: flex-start; width:900px;
+    list-style: none; margin: -10px; padding: 0px;
+   
+}
+nav{width: 100%;justify-content: center; align-items: center;}
+ nav div{display: flex; flex-direction: column; justify-content: center;align-items: center;}
+table{ display: flex; order: -1; justify-content: center;
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 960px;
+    margin:auto;
+    color:#000000;
+    font-size: large; text-align: center;
+} li{text-align: center; display: flex; 
+
+}
+table th {
+    font-weight: bold;
+    padding: 0px;
+    background:#ffffff;
+    border: 0px #000000;
+}
+table td{
+    padding: 5px 10px;
+    border: 0px #000000;
+}
+table tbody tr:nth-child(odd){
+    background: #f1cd7e;
+}
+table tbody tr:nth-child(even){
+    background: #697568;
+}
+footer{
+    background-color: #024105;
+    margin:0px;
+    padding: 15px;
+    width: 100%;
+}footer p{
+    color: aliceblue;}}
+    
+
+
+@media screen and (min-width:981px){
+    
+header{
+    background-color: #024105;
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+    header a{
+        font-size: 25px;
+        padding: 15px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    header ul{
+        list-style: none;
+        margin:0;
+        padding: 50px;
+        float: right;
+    }
+    header li{display: inline;}
+    header img{border-radius: 50px; 
+        float: left;
+        margin: auto;position: relative; bottom: -20px; left:30px;}
+    header p{font-size: 40px; color: aliceblue; position: relative; bottom: 30px; left:50px;}
+    body{width: 100%; height: 100%;}
+    
+    li{text-align: center; list-style-position: inside;}
+    form{text-align: center;}
+
+    table{
+        border: 1px solid #eee;
+        table-layout: fixed;
+        width: 960px;
+        margin:auto;
+        color:#000000;
+        font-size: large; text-align: center;
+    }
+    table th {
+        font-weight: bold;
+        padding: 0px;
+        background:#ffffff;
+        border: 0px #000000;
+    }
+    table td{
+        padding: 5px 10px;
+        border: 0px #000000;
+    }
+    table tbody tr:nth-child(odd){
+        background: #f1cd7e;
+    }
+    table tbody tr:nth-child(even){
+        background: #697568;
+    }
+    footer{
+        background-color: #024105;
+        margin:0px;
+        padding: 15px;
+        width: 100%;
+    }footer p{
+        color: aliceblue;}}
+    
