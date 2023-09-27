@@ -1,4 +1,4 @@
-@media screen and (max-width: 981px)  {  body{display: flex; flex-direction: column;}
+@media screen and (max-width: 981px)  {  body{display: flex; flex-direction: column; width: 100%;}
 header{ display: flex; 
     background-color: #024105;
     margin:0px;
@@ -17,27 +17,28 @@ header a{ display: flex;
    
 }
 nav{width: 100%;justify-content: center; align-items: center;}
- nav div{display: flex; flex-direction: column; justify-content: center;align-items: center;}
+nav ul{justify-content: center; text-align: center;}
+ nav div{display: flex; flex-direction: column; }
 table{ display: flex; order: -1; justify-content: center;
-    border: 1px solid #eee;
-    table-layout: fixed;
-    width: 960px;
-    margin:auto;
+    border: 1px solid #eee; table-layout: fixed;
+    margin:0;
     color:#000000;
     font-size: large; text-align: center;
-} li{text-align: center; display: flex; 
+} nav li{text-align: center; list-style-position: inside;
 
-}
+} 
+tbody{display: flex; justify-content: center;flex-direction: column; text-align: center; width:800px}
+table tr{display: flex; justify-content: space-around;}
+form{text-align: center; list-style-position: inside;}
 table th {
     font-weight: bold;
     padding: 0px;
     background:#ffffff;
     border: 0px #000000;
 }
-table td{
+table td{ width: 200px; 
     padding: 5px 10px;
-    border: 0px #000000;
-}
+} 
 table tbody tr:nth-child(odd){
     background: #f1cd7e;
 }
@@ -115,4 +116,5 @@ header{
         width: 100%;
     }footer p{
         color: aliceblue;}}
+    
     
