@@ -1,0 +1,36 @@
+
+    .navbar-brand img{border-radius: 50px; } 
+	.navbar-expand{background-color: #024105; }
+    .im img{width: 70%; height: 50%;}
+	.spisok {list-style-position: inside; justify-content: start;}
+	table{
+        border: 2px solid #000000;
+        table-layout: fixed;
+        width: 100%;
+        margin:auto;
+        color:#000000;
+        font-size: large; text-align: center;
+    }
+    table th {
+        font-weight: bold;
+        padding: 0px;
+        background:#ffffff;
+    }
+    table td{
+        padding: 5px 10px;
+        border: 1px solid #000000;
+    }
+    table tbody tr:nth-child(odd){
+        background: #ffffff;
+    }
+    table tbody tr:nth-child(even){
+        background: #5b7558;
+    }footer{
+        background-color: #024105;
+        margin:0px;
+        padding: 15px;
+        width: 100%;
+    }footer p{
+        color: aliceblue;}
+   
+    
