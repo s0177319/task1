@@ -21,7 +21,7 @@ nav ul{justify-content: center; text-align: center;}
  nav div{display: flex; flex-direction: column; }
 table{ display: flex; order: -1; justify-content: center;
     border: 1px solid #eee; table-layout: fixed;
-    margin:0;
+    margin:10px;
     color:#000000;
     font-size: large; text-align: center;
 } nav li{text-align: center; list-style-position: inside;
