@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задание 5</title>
+        <script>
+        function raschitat() {
+        tovar  = document.getElementById('tovar').value;
+        switch (tovar) {
+           case "1":
+              cena = 23;
+              break
+           case "2":
+              cena = 12;
+              break   
+            case "3":
+              cena = 15;
+              break   
+           default:
+              cena = 12;
+              break
+        }
+        kolvo  = document.getElementById('kolvo').value;
+        if(kolvo == ""){
+        alert("Вы не указали количество товаров");
+        } else {
+        stoimost = kolvo*cena;
+        document.getElementById('stoimost').innerHTML = "Стоимость заказа равна: "+ stoimost +" р.";
+        }
+        }
+        </script>
+      </head>
+      <body>
+         <h1>Расчет стоимости заказа</h1>
+        <select id="tovar">
+        <option value="1">Тетрадь 12 л.</option>
+        <option value="2">Ручка</option>
+        <option value="3">Карандаш</option>
+        </select>
+        <input type="text" id="kolvo" value="" placeholder="Введите количество">
+        <button onclick="raschitat();">Рассчитать стоимость</button>
+        <div id="stoimost"></div>
+      </body>
+      </html>
