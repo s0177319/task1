@@ -3,42 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Задание 5</title>
-        <script>
-        function raschitat() {
-        tovar  = document.getElementById('tovar').value;
-        switch (tovar) {
-           case "1":
-              cena = 23;
-              break
-           case "2":
-              cena = 12;
-              break   
-            case "3":
-              cena = 15;
-              break   
-           default:
-              cena = 12;
-              break
-        }
-        kolvo  = document.getElementById('kolvo').value;
-        if(kolvo == ""){
-        alert("Вы не указали количество товаров");
-        } else {
-        stoimost = kolvo*cena;
-        document.getElementById('stoimost').innerHTML = "Стоимость заказа равна: "+ stoimost +" р.";
-        }
-        }
+        <script src="scr.js">
         </script>
+        <style>.form{display: flex;justify-content: center};</style>
+        <style>.res{display: flex; justify-content: center};</style>
       </head>
       <body>
-         <h1>Расчет стоимости заказа</h1>
+         <h1 style="text-align: center;">Расчет стоимости заказа</h1><br>
+         <div class="form">
         <select id="tovar">
         <option value="1">Тетрадь 12 л.</option>
         <option value="2">Ручка</option>
         <option value="3">Карандаш</option>
         </select>
         <input type="text" id="kolvo" value="" placeholder="Введите количество">
-        <button onclick="raschitat();">Рассчитать стоимость</button>
-        <div id="stoimost"></div>
+        <button id="my-button">Рассчитать стоимость</button></div>
+        <div class="res">
+        <div id="stoimost"></div></div>
       </body>
       </html>
