@@ -1,0 +1,18 @@
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    width: 100%;
+  }
+  
+  .pager {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .current-page {
+    font-weight: bold;
+  }
+    
