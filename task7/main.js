@@ -1,18 +1,20 @@
-$(document).ready(function () {
-  $('.slider').slick({
-    arrows: true,
-    dots: true,
-    infinite: false, 
-    slidesToShow: 3, 
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 981, 
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+document.addEventListener('DOMContentLoaded', function() {
+  $(".multiple-items").slick({
+      dots: true,
+      infinite: true,
+      arrows: true,
+      speed: 400,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive:[
 
-});
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+      ]
+    });
+}, false);
