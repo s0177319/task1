@@ -1,18 +1,16 @@
-.gallery-container {
+body {
+    background: #390000d3;
+  }
+  .content {
+    margin: auto;
+    padding: 0px;
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
   }
   
-  .slider {
-    width: 100%;
-  }
-  
-  .pager {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .current-page {
-    font-weight: bold;
-  }
-    
