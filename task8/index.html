@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Задание 8</title>
+</head>
+<body>
+    
+  <div class="openPopupButton"><button id="openPopupButton">Открыть форму</button></div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <div class="col-12">
+      <h2 style="text-align: center;">Форма обратной связи</h2><br>
+      <div class="form">
+      <form id="feedbackForm" style="display: flex; justify-content: center; flex-direction: column;">
+        <label for="fullName" style="text-align: center;">Введите ФИО:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br>
+  
+        <label for="email"style="text-align: center;">Введите email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+  
+        <label for="phone"style="text-align: center;">Введите телефон:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+  
+        <label for="organization"style="text-align: center;">Введите название организации:</label><br>
+        <input type="text" id="organization" name="organization" required><br>
+  
+        <label for="message"style="text-align: center;">Введите сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+  
+        <label for="agreement">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          Я согласен(-на) с политикой обработки персональных данных
+        </label><br>
+  
+        <button type="submit">Отправить</button>
+    </div>
+      </form>
+    </div>
+</div></div>
+  
+  <div id="successMessage" class="message"></div>
+  <div id="errorMessage" class="message"></div>  
+</body>
+</html>
